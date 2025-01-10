@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/redwood
+KERNEL_PATH := device/xiaomi/redwood-kernel
 
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
@@ -13,16 +14,11 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := redwood
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
-
-# Kernel modules
-BOOT_KERNEL_MODULES := \
-    focaltech_touch.ko \
-    goodix_core.ko \
-    hwid.ko \
-    msm_drm.ko \
-    xiaomi_touch.ko
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
+BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/01_dtbdump_Qualcomm_Technologies,_Inc._Yupik_SoC.dtb
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
