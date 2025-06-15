@@ -1,0 +1,15 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<config>
+    <overlay package="android.overlay.redwood" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.redwoodcn" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.redwoodgl" mutable="false" enabled="true" />
+    <overlay package="com.android.providers.settings.overlay.redwoodin" mutable="false" enabled="true" />
+    <overlay package="com.android.settings.overlay.redwood" mutable="false" enabled="true" />
+    <overlay package="com.android.systemui.overlay.redwood" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.redwoodcn" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.redwoodgl" mutable="false" enabled="true" />
+    <overlay package="com.android.wifi.resources.overlay.redwoodin" mutable="false" enabled="true" />
+</config>
