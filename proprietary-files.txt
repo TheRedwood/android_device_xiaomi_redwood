@@ -97,13 +97,18 @@ vendor/lib/hw/audio.primary.lahaina.so:vendor/lib/hw/audio.primary.redwood.so;FI
 vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_redwood.so;FIX_SONAME
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioalsa.so
 vendor/lib/libaudiocloudctrl.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libexthwplugin.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libmmhardware.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
+vendor/lib/libspkrprot.so
 vendor/lib/libvideoNS.so;DISABLE_CHECKELF
 vendor/lib/vndk/libxlog.so
 
