@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open'),
     'vendor/lib64/libsensor_cal_v2.so': blob_fixup()
         .add_needed('libjsoncpp_shim.so'),
+    'vendor/lib64/libgf_hal.so': blob_fixup()
+        .remove_needed('libqti-perfd-client.so'),
 }  # fmt: skip
 
 
